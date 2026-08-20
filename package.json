@@ -1,0 +1,26 @@
+{
+  "name": "bot-core",
+  "version": "26.1.0",
+  "description": "Discord bot bootstrap core (config/logger/client/dispatch/module system)",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test": "npm run build && node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.4.5",
+    "pino": "^8.19.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  }
+}
